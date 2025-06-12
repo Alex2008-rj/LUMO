@@ -1,0 +1,61 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* azul muy claro */
+    color: #2b2b2b;             /* gris oscuro neutro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezados */
+h2 {
+    color: #2b7a78; /* turquesa oscuro */
+    border-bottom: 2px solid #a2d5d5; /* línea azul suave */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Párrafos */
+p {
+    font-weight: 400;
+}
+
+/* Imagen */
+img {
+    width: 600px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+}
+.formulario-contacto {
+            background-color: #e0f7fa;
+            border: 2px solid #3aafa9;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3aafa9;
+            color: white;
+            cursor: pointer;
+        }

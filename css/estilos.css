@@ -1,0 +1,112 @@
+/* Configuración general del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+    margin: 0;
+    background-color: #f0f8ff; /* Color de fondo azul muy claro */
+    color: #333; /* Color de texto en gris oscuro para mejorar la legibilidad */
+    width: 100%;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #3aafa9; /* Color turquesa */
+    color: white; /* Texto blanco para contraste */
+    text-align: center; /* Centra el contenido */
+    padding: 30px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo del menú de navegación */
+/* Menú de navegación como botones */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3aafa9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu a:hover {
+    background-color: #2b7a78;
+    transform: translateY(-2px);
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 20px;
+    max-width: 900px; /* Limita el ancho del contenido */
+    margin: auto;
+    background-color: #e0f7fa; /* Azul agua */
+}
+
+/* Estilos de los títulos */
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #ffffff;
+}
+h2 {
+    color: #2b7a78; /* Azul oscuro */
+}
+
+/* Estilo de la sección de beneficios */
+.benefits {
+    background-color: #ffffff; /* Fondo blanco para resaltar contenido */
+    border-left: 6px solid #3aafa9; /* Barra lateral en turquesa */
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Estilo de listas */
+ul {
+    list-style-type: square; /* Usa cuadrados como marcadores */
+    padding-left: 20px; /* Espaciado interno */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #3aafa9; /* Turquesa */
+    color: white; /* Texto en blanco */
+    text-align: center;
+    padding: 15px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo de imágenes */
+img {
+    width: 30%; /* Ajusta el ancho relativo */
+    height: 200px; /* Define la altura */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+.logo-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 250px; /* Puedes ajustar el tamaño según lo necesites */
+    height: 250px;
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Evita la distorsión manteniendo proporciones */
+}

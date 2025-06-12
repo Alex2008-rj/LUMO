@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos Caseros</title>
+  <link rel="stylesheet" href="css/es.css">
+</head>
+<body>
+
+  <h1>🧴 Instrucciones para crear tu propio producto</h1>
+
+  <!-- Bloque Jabón Líquido -->
+  <div class="bloque">
+    <div class="contenido">
+      <h2>🧼 Jabón Líquido</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>200 g de jabón rallado</li>
+        <li>750 ml de agua destilada</li>
+        <li>10 ml de aceite de coco</li>
+        <li>10 ml de aceite de almendras</li>
+        <li>4 cucharadas de glicerina</li>
+      </ul>
+      <h3>Procedimiento:</h3>
+      <ol>
+        <li>Calienta 100 ml de agua destilada y agrega el jabón rallado cuando esté tibia.</li>
+        <li>Mueve constantemente. Si necesita más agua, agrégala poco a poco.</li>
+        <li>Continúa hasta que tenga la consistencia casi deseada.</li>
+        <li>Retira del fuego y agrega los aceites y la glicerina.</li>
+        <li>Deja reposar por 3 a 3.5 horas.</li>
+        <li>Rompe la gelatina que se forma con un tenedor.</li>
+        <li>Transfiere al recipiente de almacenamiento.</li>
+      </ol>
+    </div>
+    <div class="imagen">
+      <img src="img/Captura de pantalla 2025-06-09 190042.png" alt="Jabón Líquido" onclick="mostrarModal(this.src)">
+    </div>
+  </div>
+
+  <!-- Bloque Loción Desmaquillante -->
+  <div class="bloque">
+    <div class="contenido">
+      <h2>💧 Loción Desmaquillante</h2>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>120 ml de agua de rosas</li>
+        <li>80 ml de aceite de coco</li>
+        <li>80 ml de aceite de almendras</li>
+        <li>2 cucharadas de glicerina</li>
+        <li>🌀 Batidora</li>
+      </ul>
+      <h3>Procedimiento:</h3>
+      <ol>
+        <li>Calienta el agua hasta 75°C y pásala a un recipiente amplio.</li>
+        <li>Mezcla los aceites y la glicerina al fuego (no pasar de 70°C).</li>
+        <li>Retira del fuego y añade al agua de rosas.</li>
+        <li>Mezcla con batidora durante 15 a 20 minutos.</li>
+        <li>Guarda en recipiente permanente.</li>
+        <li>Agita antes de cada uso, ya que es normal que se separen los ingredientes.</li>
+      </ol>
+    </div>
+    <div class="imagen">
+      <img src="img/Captura de pantalla 2025-06-10 101442.png" alt="Loción Desmaquillante" onclick="mostrarModal(this.src)">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img class="modal-contenido" id="imagenModal">
+  </div>
+
+  <!-- Botón Regresar -->
+  <div class="centrado">
+    <button onclick="history.back()" class="boton-regresar">⬅ Regresar</button>
+  </div>
+
+  <!-- Script para el modal -->
+  <script>
+    function mostrarModal(src) {
+      const modal = document.getElementById("modal");
+      const imagenModal = document.getElementById("imagenModal");
+      modal.style.display = "block";
+      imagenModal.src = src;
+    }
+
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

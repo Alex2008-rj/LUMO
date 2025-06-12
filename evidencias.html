@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencias del Proyecto</title>
+    <link rel="stylesheet" href="css/esti.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Evidencias del Proyecto</h1>
+    </header>
+
+    <!-- Subtítulo 1 -->
+    <h2 class="subtitulo">🧼Jabon LUMO</h2>
+    <section class="galeria">
+        <div class="tarjeta-img"><img src="img/1.jpg" alt="Evidencia 1" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/2.jpg" alt="Evidencia 2" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/3.jpg" alt="Evidencia 3" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/4.jpg" alt="Evidencia 4" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/5.jpg" alt="Evidencia 5" onclick="mostrarModal(this.src)"></div>
+    </section>
+
+    <!-- Subtítulo 2 -->
+    <h2 class="subtitulo">🧪Losion Desmaquillante AURA ROSA</h2>
+    <section class="galeria">
+        <div class="tarjeta-img"><img src="img/6.jpg" alt="Evidencia 6" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/7.jpg" alt="Evidencia 7" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/8.jpg" alt="Evidencia 8" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/9.jpg" alt="Evidencia 9" onclick="mostrarModal(this.src)"></div>
+        <div class="tarjeta-img"><img src="img/10.jpg" alt="Evidencia 10" onclick="mostrarModal(this.src)"></div>
+    </section>
+
+    <!-- Modal de imagen -->
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img class="modal-contenido" id="imagenModal">
+    </div>
+
+    <!-- Botón regresar -->
+    <div class="centrado">
+        <button onclick="history.back()" class="boton-regresar">⬅ Regresar</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Jabones Naturales. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script del modal -->
+    <script>
+        function mostrarModal(src) {
+            const modal = document.getElementById("modal");
+            const imagenModal = document.getElementById("imagenModal");
+            modal.style.display = "block";
+            imagenModal.src = src;
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

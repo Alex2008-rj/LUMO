@@ -1,0 +1,90 @@
+/* Configuración general del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+    margin: 0;
+    background-color: #f0f8ff; /* Color de fondo azul muy claro */
+    color: #333; /* Color de texto en gris oscuro para mejorar la legibilidad */
+    width: 100%;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #3aafa9; /* Color turquesa */
+    color: white; /* Texto blanco para contraste */
+    text-align: center; /* Centra el contenido */
+    padding: 30px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo del menú de navegación */
+.menu ul {
+    list-style: none; /* Elimina los marcadores predeterminados */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usa flexbox para mejor alineación */
+    gap: 10px; /* Espaciado entre elementos */
+    justify-content: center; /* Centra los enlaces del menú */
+}
+
+.menu li {
+    display: inline; /* Mantiene los elementos en línea */
+}
+
+/* Estilo de los enlaces del menú */
+.menu a {
+    display: inline-block; /* Permite aplicar dimensiones */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #3aafa9; /* Color turquesa */
+    color: white; /* Texto en blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Suaviza la transición de color */
+}
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+.menu a:hover {
+    background-color: #2b7a78; /* Turquesa más oscuro */
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 20px;
+    max-width: 900px; /* Limita el ancho del contenido */
+    margin: auto;
+    background-color: #e0f7fa; /* Azul agua */
+}
+
+/* Estilos de los títulos */
+h1, h2 {
+    color: #2b7a78; /* Azul oscuro */
+}
+
+/* Estilo de la sección de beneficios */
+.benefits {
+    background-color: #ffffff; /* Fondo blanco para resaltar contenido */
+    border-left: 6px solid #3aafa9; /* Barra lateral en turquesa */
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Estilo de listas */
+ul {
+    list-style-type: square; /* Usa cuadrados como marcadores */
+    padding-left: 20px; /* Espaciado interno */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #3aafa9; /* Turquesa */
+    color: white; /* Texto en blanco */
+    text-align: center;
+    padding: 15px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo de imágenes */
+img {
+    width: 30%; /* Ajusta el ancho relativo */
+    height: 200px; /* Define la altura */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}

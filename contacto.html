@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Jabón Líquido</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <h1>Contáctanos</h1>
+
+  <h2>Correo Electrónico</h2>
+  <p>jabonliquido500@gmail.com</p>
+
+  <h2>Número Telefónico</h2>
+  <p>+52 55 6787 9098</p>
+
+  <div class="formulario-contacto">
+    <h2>Formulario de Contacto</h2>
+    <form id="contacto" action="php/datos.php" method="POST">
+      <label for="telefono">Número Telefónico:</label><br>
+      <input type="tel" id="telefono" name="telefono" required><br>
+
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="correo">Correo Electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+      <button type="submit">Guardar y Enviar a WhatsApp</button>
+    </form>
+  </div>
+  <div style="text-align: center; margin: 30px 0;">
+        <button onclick="history.back()" style="background-color: #3aafa9; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            ⬅ Regresar
+        </button>
+    </div>
+
+  <script src="js/celular.js"></script>
+</body>
+</html>
